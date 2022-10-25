@@ -9,19 +9,19 @@ const TabsEx = () => {
             id: 1,
             tabTitle: 'Tab 1',
             title: 'Title 1',
-            content: 'Las tabs se generan automáticamente a partir de un array de objetos, el cual tiene las propiedades: id, tabTitle, title y content.'
+            content: 'Every developerdata scientistsystem adminmobile developergame developer has aen to Stack Overflow'
         },
         {
             id: 2,
             tabTitle: 'Tab 2',
             title: 'Title 2',
-            content: 'Contenido de tab 2.'
+            content: 'A community-based space to find and contribute answers to technical challenges, and one of the most popular websites in the world.'
         },
         {
             id: 3,
             tabTitle: 'Tab 3',
             title: 'Title 3',
-            content: 'Contenido de tab 3.'
+            content: 'A web-based platform to increase productivity, decrease cycle times, accelerate time to market, and protect institutional knowledge.'
         },
         {
             id: 4,
