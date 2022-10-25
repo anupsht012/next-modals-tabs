@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 20px;
+}
+
+
+
+.container {
+  width: 96%;
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.tabs button {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  width: 100%;
+  transition: all 0.5s ease-out;
+}
+
+.tabs button:hover {
+  border-bottom: 0.5rem solid #888888;
+  /* color: rgb(34, 31, 31); */
+  padding: 0 2rem;
+  /* background-color: rgba(255, 255, 255, 0.15); */
+}
+
+.tabs button:disabled {
+  background: #888888;
+  color: white;
+}
+
+.title {
+  margin-bottom: 1vh;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-top: 2vh;
+}
+
+.content {
+  padding: 1rem 1rem;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.para {
+  font-size: 1.8rem;
+}
+
+.content button {
+  font-size: 2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin: 5rem 0;
+}
+
+.box {
+  height: 40vh;
+  width: 30%;
+  background: red;
+  margin-top: 5vh;
+}
+
+
+@media only screen and (max-width: 425px) {
+
+  .container {
+    width: 100%;
+  }
+
+  .tabs button {
+    font-size: 1.1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .para {
+    font-size: 1.4rem;
+  }
+
+  .box {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 400px) {
+
+  .box {
+    width: 40%;
+    height:30vh ;
+  }
+}
+
+
+.dialog{
+  /* font-size: 1.8rem; */
+  height:100%;
+  width:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backdrop{
+  position: absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width: 100%;
+  background:rgba(0,0,0,0.3);
+}
+.card{
+  background:white;
+  z-index: 1;
+  padding:1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 16px 3px rgba(0,0,0,0.12);
+}
+.dialogbtn{
+display: flex;
+justify-content: center;
+margin: 5vh 0;
+}
+
+.dialogbtn .modalbtn{
+  font-size: 1.6rem;
+ background-color: #888888;
+ color: aliceblue;
+ border: none;
+ padding: 1rem 2rem;
+}
+
+.dialog-content{
+  font-size: 1.8rem;
+}
+.subscribe{
+  font-size: 1.6rem;
+  background-color: red;
+  color: aliceblue;
+  padding: 1rem 2rem;
+  margin-top: 8vh;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.slideTop{
+  animation: slideTop .3s ease-in;
+}
+@keyframes slideTop {
+  from{
+      transform: translateY(-100%);
+      opacity: 0;
+  }to{
+           transform: translateY(0%);
+           opacity: 1;
+       }
+
+}
